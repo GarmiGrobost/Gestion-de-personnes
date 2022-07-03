@@ -21,11 +21,11 @@ public class App01 {
 		 * Voitures pour la Poste, On va gérer ces créations dans des listes, On va les
 		 * trier, les filter .....; JDK 1.8 -> JDK 17
 		 */
-		Personne p1 = new Facteur("", "", Genre.MR);
-		Facteur f1 = new Facteur("Martin", "Martine", Genre.MME);
-		Facteur f2 = new Facteur("Dupond", "Martine", Genre.MME);
-		Facteur f3 = new Facteur("Germain", "Christophe", Genre.MR);
-		Object o1 = new Facteur("Martin", "Martine", Genre.MME);
+		Personne p1 = new Facteur("", "", Genre.MR, 0);
+		Facteur f1 = new Facteur("Martin", "Martine", Genre.MME, 0);
+		Facteur f2 = new Facteur("Dupond", "Martine", Genre.MME, 0);
+		Facteur f3 = new Facteur("Germain", "Christophe", Genre.MR, 0);
+		Object o1 = new Facteur("Martin", "Martine", Genre.MME, 0);
 
 		Vehicle v1 = new VoiturePoste("102-256-58");
 		Voiture vt1 = new VoiturePoste("102-256-58");
@@ -84,6 +84,9 @@ public class App01 {
 		lo.add(vt1);
 		lo.add(vp1);
 		lo.add(ivp1);
+
+		// lo.forEach(o->{Sytem.out.println(o);});
+		// lamda expression avec le stream()
 	}
 
 }
