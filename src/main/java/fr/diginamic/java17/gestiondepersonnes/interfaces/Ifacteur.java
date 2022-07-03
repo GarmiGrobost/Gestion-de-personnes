@@ -5,4 +5,6 @@ public interface Ifacteur {
 	default void trier() {
 		System.out.println("Je trie par défaut !");
 	}
+
+	Object distribuer();
 }
