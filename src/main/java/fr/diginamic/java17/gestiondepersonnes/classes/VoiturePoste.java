@@ -18,6 +18,6 @@ public class VoiturePoste extends Voiture implements Ifacteur {
 	@Override
 	public void trier() {
 		// TODO Auto-generated method stub
-
+		System.out.println("Le trie se fait dans la voiture");
 	}
 }

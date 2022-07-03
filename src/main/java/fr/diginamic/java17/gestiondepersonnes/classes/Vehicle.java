@@ -14,4 +14,9 @@ public abstract class Vehicle {
 		return immatriculation;
 	}
 
+	@Override
+	public String toString() {
+		return "Vehicle [immatriculation = " + immatriculation + "]";
+	}
+
 }

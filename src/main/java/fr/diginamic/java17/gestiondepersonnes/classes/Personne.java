@@ -40,4 +40,9 @@ public abstract class Personne {
 		this.genre = genre;
 	}
 
+	@Override
+	public String toString() {
+		return "Personne [nom = " + nom + ", prenom = " + prenom + ", genre = " + genre + "]";
+	}
+
 }
